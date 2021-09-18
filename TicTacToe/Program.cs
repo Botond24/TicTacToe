@@ -6,9 +6,10 @@ namespace TicTacToe
     class Global
     {
         public static bool game = true;
-        public static char[,] board = new char[3, 3] { { ' ',' ',' ' }, //important: only works with ' and does not with " !!!! 
-                                                { ' ',' ',' ' },
-                                                { ' ',' ',' ' } }; //2 dimensonal array, all empty
+        public static char[,] board = new char[3, 3] {
+            { ' ',' ',' ' }, //important: only works with ' and does not with " !!!! 
+            { ' ',' ',' ' },
+            { ' ',' ',' ' } }; //2 dimensonal array, all empty
 
     }
     class Program
@@ -152,9 +153,10 @@ namespace TicTacToe
         {
             Console.WriteLine($"{P} WINS!");
             Global.game = false;
-            Global.board = new char[3, 3] { { ' ',' ',' ' },
-                                            { ' ',' ',' ' },
-                                            { ' ',' ',' ' } };
+            Global.board = new char[3, 3] {
+                { ' ',' ',' ' },
+                { ' ',' ',' ' },
+                { ' ',' ',' ' } };
         }
     }
 }
